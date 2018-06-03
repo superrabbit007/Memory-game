@@ -89,8 +89,7 @@ function openArray(event) {
     count = count +1;
 
     //设置点击次数计数，用于判断是否调用judgeCard函数
-    co =co +1;
-
+    co =co 
     //由于点击之后count的最小值为1，数组index需要从0开始，所以此处count-1
     arrayOpen[count-1] = event.target;
   }
@@ -168,7 +167,7 @@ function pop() {
     //更改弹框中的提示信息
     let popMessage1 = document.getElementsByClassName('pop-message1');
     popMessage1[0].style.cssText = " width:100%; font-size:1em; text-align:center";
-    popMessage1[0].textContent="With "+ matchSum + " Moves and "+ stCount+" Stars.";
+    popMessage1[0].textContent="With "+ count1 + " Moves and "+ stCount +" Stars.";
 
 }
 
